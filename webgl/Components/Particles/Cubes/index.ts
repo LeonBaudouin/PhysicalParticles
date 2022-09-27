@@ -24,7 +24,7 @@ export default class Cubes extends AbstractObject<
   public static DEFAULT_PARAMS: Omit<CubesData, 'textureSize'> = reactive({
     sizeVariation: new THREE.Vector4(0.07, 0.28, 0, 1),
     size: 0.5,
-    matcap: new URL(matcap, import.meta.url).href,
+    matcap: `${location.origin}/${matcap}`,
     geometry: null,
   })
 

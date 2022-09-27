@@ -33,7 +33,7 @@ export default class ParticleManager extends AbstractObject {
     gravity: new THREE.Vector3(0.005, 0.002, 0),
     rotationStrength: new THREE.Vector2(-0.004, 0.015),
     rotationDirection: new THREE.Euler(0.85, 0.01, 0),
-    matcap: new URL(matcap, import.meta.url).href,
+    matcap: `${location.origin}/${matcap}`,
     size: 0.5,
     sizeVariation: new THREE.Vector4(0.09, 0.28, 0, 1),
     textureSize: new THREE.Vector2(128, 128),
