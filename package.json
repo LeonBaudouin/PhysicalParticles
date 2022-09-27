@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "nuxt": "^3.0.0-rc.3",
+    "vite-plugin-glsl": "^0.4.0"
+  },
+  "dependencies": {
+    "@0b5vr/tweakpane-plugin-rotation": "^0.1.1",
+    "@tweakpane/core": "^1.0.8",
+    "@tweakpane/plugin-essentials": "^0.1.4",
+    "@types/three": "^0.137.0",
+    "easing-functions": "^1.0.1",
+    "gsap": "^3.10.3",
+    "resize-observer-polyfill": "^1.5.1",
+    "sass": "^1.49.9",
+    "simplex-noise": "^4.0.0",
+    "stats.js": "^0.17.0",
+    "three": "^0.138.2",
+    "tweakpane": "^3.0.7",
+    "tweakpane-image-plugin": "^1.1.3"
+  }
+}
